@@ -55,4 +55,4 @@ Append to file
 <code>127.0.0.1 <em>pma.appname.test</em></code>
 
 ### Start docker-compose
-<code>docker-compose up -d --build</code>
+<code>docker compose up -d --build</code>
