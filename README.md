@@ -1,5 +1,24 @@
 # DOCKER TEMPLATE
 
+## STRUCTURE
+
+<code>docker-template/<br>
+|---docker/<br>
+|   |---nginx/<br>
+|   |   |---ssl/                            # create this folder, this is where certificates reside<br>
+|   |   '---templates/<br>
+|   |       '---default.conf.template<br>
+|   '---php/<br>
+|       '---Dockerfile<br>
+|---src/                                    # create this folder, this is where app resides<br>
+|   '---public/                             # create this folder, this is the root directory for app<br>
+|---.dockerignore
+|---.env                                    # create this file from .env.example and edit configuration
+|---.env.example
+|---.gitignore
+|---.docker-compose.yml
+'---README.md</code>
+
 ## SERVICES
 
 <ul>
@@ -49,8 +68,8 @@ Open Admininstrator Powershell<br>
 <code>mkcert <em>appname.test</em> <em>pma.appname.test</em></code>
 
 ### Edit host file
-c:/windows/system32/drivers/etc/hosts
-Append to file
+<code>c:/windows/system32/drivers/etc/hosts</code><br>
+Append to file<br>
 <code>127.0.0.1 <em>appname.test</em></code><br>
 <code>127.0.0.1 <em>pma.appname.test</em></code>
 
