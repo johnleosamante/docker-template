@@ -1,0 +1,5 @@
+/.qodo
+/.vscode
+/docker/nginx/ssl
+/src
+.env
